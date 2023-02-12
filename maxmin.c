@@ -16,10 +16,16 @@ int main(void){
     float *max, *min;
     max = malloc(sizeof(max));
     min = malloc(sizeof(min));
+    
     printf("Enter max and min:\n");
     scanf("%f %f", max, min);
     printf("%f %f\n", *max, *min);
+    
     maxmin(max, min);
     printf("%f %f\n", *max, *min);
+    
+    free(max);
+    free(min);
+    
     return 0;
 }
